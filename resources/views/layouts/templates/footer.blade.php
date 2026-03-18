@@ -8,7 +8,7 @@
                         <div class="col-lg-3 col-md-4 col-12">
                             <div class="footer-logo">
                                 <a href="index.html">
-                                    <img src="templates/assets/images/logo/white-logo.svg" alt="#">
+                                    <img src="{{asset('templates/assets/images/logo/logo1.png')}}" alt="#">
                                 </a>
                             </div>
                         </div>

@@ -15,7 +15,8 @@
 
    @include('layouts.templates.header')
    @include('layouts.templates.hero')
-   @include('layouts.templates.content')
+   @include('layouts.templates.products')
+   {{-- @include('layouts.templates.content') --}}
 
 
 

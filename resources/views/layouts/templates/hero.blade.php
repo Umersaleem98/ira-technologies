@@ -2,7 +2,7 @@
     <section class="hero-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-12 custom-padding-right">
+                <div class="col-lg-12 col-12 custom-padding-right">
                     <div class="slider-head">
                         <!-- Start Hero Slider -->
                         <div class="hero-slider">
@@ -42,7 +42,7 @@
                         <!-- End Hero Slider -->
                     </div>
                 </div>
-                <div class="col-lg-4 col-12">
+                {{-- <div class="col-lg-4 col-12">
                     <div class="row">
                         <div class="col-lg-12 col-md-6 col-12 md-custom-padding">
                             <!-- Start Small Banner -->
@@ -72,7 +72,7 @@
                             <!-- Start Small Banner -->
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
