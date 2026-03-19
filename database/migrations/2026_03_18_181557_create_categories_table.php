@@ -11,14 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('categories', function (Blueprint $table) {
-           $table->id();
-    $table->string('name');
-    $table->boolean('is_active')->default(true);
-    $table->timestamps();
+          Schema::create('categories', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('image')->nullable(); // New column for category image
+            $table->boolean('is_active')->default(true);
+            $table->timestamps();
         });
-    }
 
+    }
     /**
      * Reverse the migrations.
      */
