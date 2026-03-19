@@ -1,5 +1,5 @@
 @include('layouts.templates.head')
-
+<title>IRA-Tech.</title>
 <body>
 
     <!-- Preloader -->

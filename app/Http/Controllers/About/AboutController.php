@@ -3,12 +3,26 @@
 namespace App\Http\Controllers\About;
 
 use App\Http\Controllers\Controller;
+use App\Models\Brand;
+use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
 {
     public function index()
     {
-        return view('pages.templates.about.index');
+
+     $products = Product::with(['category', 'brand'])
+            ->where('is_active', 1)
+            ->latest()
+            ->get();
+
+        $categories = Category::where('is_active', 1)->get();
+        $brands = Brand::where('is_active', 1)->get();
+
+        // return view('index', compact('products', 'categories', 'brands'));
+
+        return view('pages.templates.about.index', compact('products', 'categories', 'brands'));
     }
 }

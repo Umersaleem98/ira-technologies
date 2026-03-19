@@ -44,7 +44,7 @@
                             <i class="lni lni-user"></i> Hello
                         </div>
                         <ul class="user-login">
-                            <li><a href="#">Sign In</a></li>
+                            <li><a href="{{route('login')}}">Sign In</a></li>
                             <li><a href="#">Register</a></li>
                         </ul>
                     </div>

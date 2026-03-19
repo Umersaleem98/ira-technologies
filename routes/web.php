@@ -20,6 +20,13 @@ Route::get('/products/category/{id}', [ProductsController::class, 'category'])->
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
+// Show login form
+Route::get('login', [AuthController::class, 'index'])->name('login');
 
-Route::get('dashboard', [AdminController::class, 'index'])->name('dashboard');
-Route::get('login', [AuthController::class, 'index'])->name('auth.login');
+// Handle login (IMPORTANT)
+Route::post('login', [AuthController::class, 'login'])->name('login.post');
+
+// Admin Protected Routes
+Route::get('dashboard', [AdminController::class, 'index'])->middleware(['auth', 'role:admin'])->name('dashboard');
+
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
