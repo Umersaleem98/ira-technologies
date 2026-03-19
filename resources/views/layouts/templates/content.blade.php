@@ -1,106 +1,354 @@
+   <!--===========================================
+=            Popular deals section            =
+============================================-->
 
-   
-
-    <!-- Start Call Action Area -->
-    <section class="call-action section">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-8 offset-lg-2 col-12">
-                    <div class="inner">
-                        <div class="content">
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Currently You are using free<br>
-                                Lite version of ShopGrids</h2>
-                            <p class="wow fadeInUp" data-wow-delay=".6s">Please, purchase full version of the template
-                                to get all pages,<br> features and commercial license.</p>
-                            <div class="button wow fadeInUp" data-wow-delay=".8s">
-                                <a href="javascript:void(0)" class="btn">Purchase Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Call Action Area -->
-
-    <!-- Start Banner Area -->
-    <section class="banner section">
+    <section class="popular-deals section bg-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="single-banner" style="background-image:url('assets/images/banner/banner-1-bg.jpg')">
-                        <div class="content">
-                            <h2>Smart Watch 2.0</h2>
-                            <p>Space Gray Aluminum Case with <br>Black/Volt Real Sport Band </p>
-                            <div class="button">
-                                <a href="product-grids.html" class="btn">View Details</a>
-                            </div>
-                        </div>
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>Trending Adds</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, magnam.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="single-banner custom-responsive-margin"
-                        style="background-image:url('assets/images/banner/banner-2-bg.jpg')">
-                        <div class="content">
-                            <h2>Smart Headphone</h2>
-                            <p>Lorem ipsum dolor sit amet, <br>eiusmod tempor
-                                incididunt ut labore.</p>
-                            <div class="button">
-                                <a href="product-grids.html" class="btn">Shop Now</a>
+            </div>
+            <div class="row">
+                <!-- offer 01 -->
+                <div class="col-lg-12">
+                    <div class="trending-ads-slide">
+                        <div class="col-sm-12 col-lg-4">
+                            <!-- product card -->
+                            <div class="product-item bg-light">
+                                <div class="card">
+                                    <div class="thumb-content">
+                                        <!-- <div class="price">$200</div> -->
+                                        <a href="single.html">
+                                            <img class="card-img-top img-fluid" src="templates/images/products/products-1.jpg"
+                                                alt="Card image cap">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a href="single.html">11inch Macbook Air</a></h4>
+                                        <ul class="list-inline product-meta">
+                                            <li class="list-inline-item">
+                                                <a href="single.html"><i class="fa fa-folder-open-o"></i>Electronics</a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="category.html"><i class="fa fa-calendar"></i>26th December</a>
+                                            </li>
+                                        </ul>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Explicabo, aliquam!</p>
+                                        <div class="product-ratings">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+
+
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <!-- product card -->
+                            <div class="product-item bg-light">
+                                <div class="card">
+                                    <div class="thumb-content">
+                                        <!-- <div class="price">$200</div> -->
+                                        <a href="single.html">
+                                            <img class="card-img-top img-fluid" src="templates/images/products/products-2.jpg"
+                                                alt="Card image cap">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a href="single.html">Full Study Table Combo</a></h4>
+                                        <ul class="list-inline product-meta">
+                                            <li class="list-inline-item">
+                                                <a href="single.html"><i class="fa fa-folder-open-o"></i>Furnitures</a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="category.html"><i class="fa fa-calendar"></i>26th December</a>
+                                            </li>
+                                        </ul>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Explicabo, aliquam!</p>
+                                        <div class="product-ratings">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <!-- product card -->
+                            <div class="product-item bg-light">
+                                <div class="card">
+                                    <div class="thumb-content">
+                                        <!-- <div class="price">$200</div> -->
+                                        <a href="single.html">
+                                            <img class="card-img-top img-fluid" src="templates/images/products/products-3.jpg"
+                                                alt="Card image cap">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a href="single.html">11inch Macbook Air</a></h4>
+                                        <ul class="list-inline product-meta">
+                                            <li class="list-inline-item">
+                                                <a href="single.html"><i class="fa fa-folder-open-o"></i>Electronics</a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="category.html"><i class="fa fa-calendar"></i>26th December</a>
+                                            </li>
+                                        </ul>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Explicabo, aliquam!</p>
+                                        <div class="product-ratings">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <!-- product card -->
+                            <div class="product-item bg-light">
+                                <div class="card">
+                                    <div class="thumb-content">
+                                        <!-- <div class="price">$200</div> -->
+                                        <a href="single.html">
+                                            <img class="card-img-top img-fluid" src="templates/images/products/products-2.jpg"
+                                                alt="Card image cap">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a href="single.html">Full Study Table Combo</a></h4>
+                                        <ul class="list-inline product-meta">
+                                            <li class="list-inline-item">
+                                                <a href="single.html"><i
+                                                        class="fa fa-folder-open-o"></i>Furnitures</a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="category.html"><i class="fa fa-calendar"></i>26th
+                                                    December</a>
+                                            </li>
+                                        </ul>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Explicabo, aliquam!</p>
+                                        <div class="product-ratings">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Banner Area -->
 
-    <!-- Start Shipping Info -->
-    <section class="shipping-info">
+
+
+    <!--==========================================
+=            All Category Section            =
+===========================================-->
+
+    <section class=" section">
+        <!-- Container Start -->
         <div class="container">
-            <ul>
-                <!-- Free Shipping -->
-                <li>
-                    <div class="media-icon">
-                        <i class="lni lni-delivery"></i>
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section title -->
+                    <div class="section-title">
+                        <h2>All Categories</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident!</p>
                     </div>
-                    <div class="media-body">
-                        <h5>Free Shipping</h5>
-                        <span>On order over $99</span>
+                    <div class="row">
+                        <!-- Category list -->
+                        <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
+                            <div class="category-block">
+                                <div class="header">
+                                    <i class="fa fa-laptop icon-bg-1"></i>
+                                    <h4>Electronics</h4>
+                                </div>
+                                <ul class="category-list">
+                                    <li><a href="category.html">Laptops <span>93</span></a></li>
+                                    <li><a href="category.html">Iphone <span>233</span></a></li>
+                                    <li><a href="category.html">Microsoft <span>183</span></a></li>
+                                    <li><a href="category.html">Monitors <span>343</span></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- /Category List -->
+                        <!-- Category list -->
+                        <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
+                            <div class="category-block">
+                                <div class="header">
+                                    <i class="fa fa-apple icon-bg-2"></i>
+                                    <h4>Restaurants</h4>
+                                </div>
+                                <ul class="category-list">
+                                    <li><a href="category.html">Cafe <span>393</span></a></li>
+                                    <li><a href="category.html">Fast food <span>23</span></a></li>
+                                    <li><a href="category.html">Restaurants <span>13</span></a></li>
+                                    <li><a href="category.html">Food Track<span>43</span></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- /Category List -->
+                        <!-- Category list -->
+                        <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
+                            <div class="category-block">
+                                <div class="header">
+                                    <i class="fa fa-home icon-bg-3"></i>
+                                    <h4>Real Estate</h4>
+                                </div>
+                                <ul class="category-list">
+                                    <li><a href="category.html">Farms <span>93</span></a></li>
+                                    <li><a href="category.html">Gym <span>23</span></a></li>
+                                    <li><a href="category.html">Hospitals <span>83</span></a></li>
+                                    <li><a href="category.html">Parolurs <span>33</span></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- /Category List -->
+                        <!-- Category list -->
+                        <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
+                            <div class="category-block">
+                                <div class="header">
+                                    <i class="fa fa-shopping-basket icon-bg-4"></i>
+                                    <h4>Shoppings</h4>
+                                </div>
+                                <ul class="category-list">
+                                    <li><a href="category.html">Mens Wears <span>53</span></a></li>
+                                    <li><a href="category.html">Accessories <span>212</span></a></li>
+                                    <li><a href="category.html">Kids Wears <span>133</span></a></li>
+                                    <li><a href="category.html">It & Software <span>143</span></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- /Category List -->
+                        <!-- Category list -->
+                        <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
+                            <div class="category-block">
+                                <div class="header">
+                                    <i class="fa fa-briefcase icon-bg-5"></i>
+                                    <h4>Jobs</h4>
+                                </div>
+                                <ul class="category-list">
+                                    <li><a href="category.html">It Jobs <span>93</span></a></li>
+                                    <li><a href="category.html">Cleaning & Washing <span>233</span></a></li>
+                                    <li><a href="category.html">Management <span>183</span></a></li>
+                                    <li><a href="category.html">Voluntary Works <span>343</span></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- /Category List -->
+                        <!-- Category list -->
+                        <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
+                            <div class="category-block">
+                                <div class="header">
+                                    <i class="fa fa-car icon-bg-6"></i>
+                                    <h4>Vehicles</h4>
+                                </div>
+                                <ul class="category-list">
+                                    <li><a href="category.html">Bus <span>193</span></a></li>
+                                    <li><a href="category.html">Cars <span>23</span></a></li>
+                                    <li><a href="category.html">Motobike <span>33</span></a></li>
+                                    <li><a href="category.html">Rent a car <span>73</span></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- /Category List -->
+                        <!-- Category list -->
+                        <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
+                            <div class="category-block">
+                                <div class="header">
+                                    <i class="fa fa-paw icon-bg-7"></i>
+                                    <h4>Pets</h4>
+                                </div>
+                                <ul class="category-list">
+                                    <li><a href="category.html">Cats <span>65</span></a></li>
+                                    <li><a href="category.html">Dogs <span>23</span></a></li>
+                                    <li><a href="category.html">Birds <span>113</span></a></li>
+                                    <li><a href="category.html">Others <span>43</span></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- /Category List -->
+                        <!-- Category list -->
+                        <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
+                            <div class="category-block">
+
+                                <div class="header">
+                                    <i class="fa fa-laptop icon-bg-8"></i>
+                                    <h4>Services</h4>
+                                </div>
+                                <ul class="category-list">
+                                    <li><a href="category.html">Cleaning <span>93</span></a></li>
+                                    <li><a href="category.html">Car Washing <span>233</span></a></li>
+                                    <li><a href="category.html">Clothing <span>183</span></a></li>
+                                    <li><a href="category.html">Business <span>343</span></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- /Category List -->
+
+
                     </div>
-                </li>
-                <!-- Money Return -->
-                <li>
-                    <div class="media-icon">
-                        <i class="lni lni-support"></i>
-                    </div>
-                    <div class="media-body">
-                        <h5>24/7 Support.</h5>
-                        <span>Live Chat Or Call.</span>
-                    </div>
-                </li>
-                <!-- Support 24/7 -->
-                <li>
-                    <div class="media-icon">
-                        <i class="lni lni-credit-cards"></i>
-                    </div>
-                    <div class="media-body">
-                        <h5>Online Payment.</h5>
-                        <span>Secure Payment Services.</span>
-                    </div>
-                </li>
-                <!-- Safe Payment -->
-                <li>
-                    <div class="media-icon">
-                        <i class="lni lni-reload"></i>
-                    </div>
-                    <div class="media-body">
-                        <h5>Easy Return.</h5>
-                        <span>Hassle Free Shopping.</span>
-                    </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
+        <!-- Container End -->
     </section>
-    <!-- End Shipping Info -->
+
+
+    <!--====================================
+=            Call to Action            =
+=====================================-->
+
+    <section class="call-to-action overly bg-3 section-sm">
+        <!-- Container Start -->
+        <div class="container">
+            <div class="row justify-content-md-center text-center">
+                <div class="col-md-8">
+                    <div class="content-holder">
+                        <h2>Start today to get more exposure and
+                            grow your business</h2>
+                        <ul class="list-inline mt-30">
+                            <li class="list-inline-item"><a class="btn btn-main" href="ad-listing.html">Add
+                                    Listing</a></li>
+                            <li class="list-inline-item"><a class="btn btn-secondary" href="category.html">Browser
+                                    Listing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container End -->
+    </section>

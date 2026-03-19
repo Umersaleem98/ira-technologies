@@ -8,13 +8,14 @@ use App\Http\Controllers\Admin\ProductsController;
 use App\Http\Controllers\auth\AuthController;
 use App\Http\Controllers\Contact\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Products\OurProductsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/our-products', [ProductsController::class, 'index'])->name('our.products');
+Route::get('/our-products', [OurProductsController::class, 'index'])->name('our.products');
 
 // Add this for search
-Route::get('/products/search', [ProductsController::class, 'search'])->name('products.search');
+Route::get('/products/search', [OurProductsController::class, 'search'])->name('products.search');
 
 // Optional: show products by category
 Route::get('/products/category/{id}', [ProductsController::class, 'category'])->name('products.category');

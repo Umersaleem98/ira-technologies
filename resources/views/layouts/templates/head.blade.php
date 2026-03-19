@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('templates/assets/images/favicon.svg') }}" />
+  <!-- ** Basic Page Needs ** -->
+  <meta charset="utf-8">
+  <title>Classimax | Classified Marketplace Template</title>
 
-    <!-- ========================= CSS here ========================= -->
-    <link rel="stylesheet" href="{{ asset('templates/assets/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('templates/assets/css/LineIcons.3.0.css') }}" />
-    <link rel="stylesheet" href="{{ asset('templates/assets/css/tiny-slider.css') }}" />
-    <link rel="stylesheet" href="{{ asset('templates/assets/css/glightbox.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('templates/assets/css/main.css') }}" />
+  <!-- ** Mobile Specific Metas ** -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Agency HTML Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Classified Marketplace Template v1.0">
+
+  <!-- theme meta -->
+  <meta name="theme-name" content="classimax" />
+
+  <!-- favicon -->
+  <link href="{{ asset('templates/images/favicon.png') }}" rel="shortcut icon">
+
+  <!--
+  Essential stylesheets
+  =====================================-->
+  <link href="{{ asset('templates/plugins/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('templates/plugins/bootstrap/bootstrap-slider.css') }}" rel="stylesheet">
+  <link href="{{ asset('templates/plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('templates/plugins/slick/slick.css') }}" rel="stylesheet">
+  <link href="{{ asset('templates/plugins/slick/slick-theme.css') }}" rel="stylesheet">
+  <link href="{{ asset('templates/plugins/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet">
+
+  <link href="{{ asset('templates/css/style.css') }}" rel="stylesheet">
 
 </head>

@@ -1,146 +1,104 @@
-  <!-- Start Footer Area -->
-    <footer class="footer">
-        <!-- Start Footer Top -->
-        <div class="footer-top">
-            <div class="container">
-                <div class="inner-content">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-4 col-12">
-                            <div class="footer-logo">
-                                <a href="index.html">
-                                    <img src="{{asset('templates/assets/images/logo/logo1.png')}}" alt="#">
-                                </a>
-                            </div>
+ <footer class="footer section section-sm">
+        <!-- Container Start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0 mb-4 mb-lg-0">
+                    <!-- About -->
+                    <div class="block about">
+                        <!-- footer logo -->
+                        <img src="templates/images/logo-footer.png" alt="logo" width="120">
+                        <!-- description -->
+                        <p class="alt-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <!-- Link list -->
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-6 mb-4 mb-lg-0">
+                    <div class="block">
+                        <h4>Site Pages</h4>
+                        <ul>
+                            <li><a href="dashboard-my-ads.html">My Ads</a></li>
+                            <li><a href="dashboard-favourite-ads.html">Favourite Ads</a></li>
+                            <li><a href="dashboard-archived-ads.html">Archived Ads</a></li>
+                            <li><a href="dashboard-pending-ads.html">Pending Ads</a></li>
+                            <li><a href="terms-condition.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Link list -->
+                <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0 col-6 mb-4 mb-md-0">
+                    <div class="block">
+                        <h4>Admin Pages</h4>
+                        <ul>
+                            <li><a href="category.html">Category</a></li>
+                            <li><a href="single.html">Single Page</a></li>
+                            <li><a href="store.html">Store Single</a></li>
+                            <li><a href="single-blog.html">Single Post</a>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- Promotion -->
+                <div class="col-lg-4 col-md-7">
+                    <!-- App promotion -->
+                    <div class="block-2 app-promotion">
+                        <div class="mobile d-flex  align-items-center">
+                            <a href="index.html">
+                                <!-- Icon -->
+                                <img src="templates/images/footer/phone-icon.png" alt="mobile-icon">
+                            </a>
+                            <p class="mb-0">Get the Dealsy Mobile App and Save more</p>
                         </div>
-                        <div class="col-lg-9 col-md-8 col-12">
-                            <div class="footer-newsletter">
-                                <h4 class="title">
-                                    Subscribe to our Newsletter
-                                    <span>Get all the latest information, Sales and Offers.</span>
-                                </h4>
-                                <div class="newsletter-form-head">
-                                    <form action="#" method="get" target="_blank" class="newsletter-form">
-                                        <input name="EMAIL" placeholder="Email address here..." type="email">
-                                        <div class="button">
-                                            <button class="btn">Subscribe<span class="dir-part"></span></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                        <div class="download-btn d-flex my-3">
+                            <a href="index.html"><img src="templates/images/apps/google-play-store.png" class="img-fluid"
+                                    alt=""></a>
+                            <a href="index.html" class=" ml-3"><img src="templates/images/apps/apple-app-store.png"
+                                    class="img-fluid" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Footer Top -->
-        <!-- Start Footer Middle -->
-        <div class="footer-middle">
-            <div class="container">
-                <div class="bottom-inner">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Single Widget -->
-                            <div class="single-footer f-contact">
-                                <h3>Get In Touch With Us</h3>
-                                <p class="phone">Phone: +1 (900) 33 169 7720</p>
-                                <ul>
-                                    <li><span>Monday-Friday: </span> 9.00 am - 8.00 pm</li>
-                                    <li><span>Saturday: </span> 10.00 am - 6.00 pm</li>
-                                </ul>
-                                <p class="mail">
-                                    <a href="mailto:support@shopgrids.com">support@shopgrids.com</a>
-                                </p>
-                            </div>
-                            <!-- End Single Widget -->
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Single Widget -->
-                            <div class="single-footer our-app">
-                                <h3>Our Mobile App</h3>
-                                <ul class="app-btn">
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="lni lni-apple"></i>
-                                            <span class="small-title">Download on the</span>
-                                            <span class="big-title">App Store</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="lni lni-play-store"></i>
-                                            <span class="small-title">Download on the</span>
-                                            <span class="big-title">Google Play</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- End Single Widget -->
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Single Widget -->
-                            <div class="single-footer f-link">
-                                <h3>Information</h3>
-                                <ul>
-                                    <li><a href="javascript:void(0)">About Us</a></li>
-                                    <li><a href="javascript:void(0)">Contact Us</a></li>
-                                    <li><a href="javascript:void(0)">Downloads</a></li>
-                                    <li><a href="javascript:void(0)">Sitemap</a></li>
-                                    <li><a href="javascript:void(0)">FAQs Page</a></li>
-                                </ul>
-                            </div>
-                            <!-- End Single Widget -->
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Single Widget -->
-                            <div class="single-footer f-link">
-                                <h3>Shop Departments</h3>
-                                <ul>
-                                    <li><a href="javascript:void(0)">Computers & Accessories</a></li>
-                                    <li><a href="javascript:void(0)">Smartphones & Tablets</a></li>
-                                    <li><a href="javascript:void(0)">TV, Video & Audio</a></li>
-                                    <li><a href="javascript:void(0)">Cameras, Photo & Video</a></li>
-                                    <li><a href="javascript:void(0)">Headphones</a></li>
-                                </ul>
-                            </div>
-                            <!-- End Single Widget -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Footer Middle -->
-        <!-- Start Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="inner-content">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 col-12">
-                            <div class="payment-gateway">
-                                <span>We Accept:</span>
-                                <img src="templates/assets/images/footer/credit-cards-footer.png" alt="#">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <div class="copyright">
-                                <p>Designed and Developed by<a href="https://graygrids.com/" rel="nofollow"
-                                        target="_blank">GrayGrids</a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <ul class="socila">
-                                <li>
-                                    <span>Follow Us On:</span>
-                                </li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-google"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Footer Bottom -->
+        <!-- Container End -->
     </footer>
-    <!--/ End Footer Area -->
+    <!-- Footer Bottom -->
+    <footer class="footer-bottom">
+        <!-- Container Start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-3 mb-lg-0">
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <p>Copyright &copy;
+                            <script>
+                                var CurrentYear = new Date().getFullYear()
+                                document.write(CurrentYear)
+                            </script>. Designed & Developed by <a class="text-white"
+                                href="https://themefisher.com">Themefisher</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Social Icons -->
+                    <ul class="social-media-icons text-center text-lg-right">
+                        <li><a class="fa fa-facebook" href="https://www.facebook.com/themefisher"></a></li>
+                        <li><a class="fa fa-twitter" href="https://www.twitter.com/themefisher"></a></li>
+                        <li><a class="fa fa-pinterest-p" href="https://www.pinterest.com/themefisher"></a></li>
+                        <li><a class="fa fa-github-alt" href="https://www.github.com/themefisher"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Container End -->
+        <!-- To Top -->
+        <div class="scroll-top-to">
+            <i class="fa fa-angle-up"></i>
+        </div>
+    </footer>

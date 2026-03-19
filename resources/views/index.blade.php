@@ -1,30 +1,20 @@
 @include('layouts.templates.head')
-<title>IRA-Tech.</title>
-<body>
 
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader-inner">
-            <div class="preloader-icon">
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-    <!-- /End Preloader -->
+<body class="body-wrapper">
 
-   @include('layouts.templates.header')
-   @include('layouts.templates.hero')
-   @include('layouts.templates.products')
-   {{-- @include('layouts.templates.content') --}}
+    @include('layouts.templates.header')
+    <!--===============================
+=            Hero Area            =
+================================-->
+
+    @include('layouts.templates.hero')
+    @include('layouts.templates.content')
 
 
 
+    <!--============================
+=            Footer            =
+=============================-->
 
-  @include('layouts.templates.footer')
-
-    <!-- ========================= scroll-top ========================= -->
-    <a href="#" class="scroll-top">
-        <i class="lni lni-chevron-up"></i>
-    </a>
-@include('layouts.templates.script')
+   @include('layouts.templates.footer')
+    @include('layouts.templates.script')
