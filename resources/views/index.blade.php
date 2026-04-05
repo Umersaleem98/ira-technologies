@@ -1,20 +1,22 @@
 @include('layouts.templates.head')
+<!-- page wrapper -->
+<title>Home</title>
+<body>
+    @include('layouts.templates.preloader')
 
-<body class="body-wrapper">
-
+    @include('layouts.templates.search')
     @include('layouts.templates.header')
-    <!--===============================
-=            Hero Area            =
-================================-->
-
     @include('layouts.templates.hero')
-    @include('layouts.templates.content')
+    @include('layouts.templates.top_categories')
+    @include('layouts.templates.shop')
 
 
+    @include('layouts.templates.footer')
 
-    <!--============================
-=            Footer            =
-=============================-->
+    <!--Scroll to top-->
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <i class="fas fa-long-arrow-alt-up"></i>
+    </button>
+    </div>
 
-   @include('layouts.templates.footer')
     @include('layouts.templates.script')

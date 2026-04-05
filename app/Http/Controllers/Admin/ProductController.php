@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Category;
+use App\Models\Brand;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -11,13 +11,13 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::with('category')->latest()->get();
+        $products = Product::with('brand')->latest()->get();
 
         return view('pages.admin.products.index', compact('products'));
     }
     public function create()
     {
-        $categories = Category::all();
+        $categories = Brand::all();
 
         //  dd($categories);
 
@@ -56,7 +56,7 @@ class ProductController extends Controller
         $product = Product::find($id);
 
         // Fetch all categories for dropdown
-        $categories = Category::all();
+        $categories = Brand::all();
 
         return view('pages.admin.products.edit', compact('product', 'categories'));
     }

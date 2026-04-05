@@ -14,12 +14,12 @@
             <div class="content">
                 <div class="page-inner">
                     <div class="page-header">
-                        <h4 class="page-title">Category</h4>
+                        <h4 class="page-title">Products</h4>
 
                     </div>
 
                     <div class="container mt-5">
-                        <h2>Categories List</h2>
+                        <h2>Products List</h2>
 
                         @if (session('success'))
                             <div class="alert alert-success">{{ session('success') }}</div>

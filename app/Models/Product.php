@@ -3,25 +3,26 @@
 namespace App\Models;
 
 use App\Models\Brand;
-use App\Models\Category;
+use App\Models\ProductRating;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    protected $fillable = [
+        'name',
+        'brand_id',
+        'description',
+        'tag',
+        'images',
+        'rating'
+    ];
 
-protected $fillable = ['name', 'image', 'description', 'category_id', 'is_active'];
-
-
-
- public function category()
-    {
-        return $this->belongsTo(Category::class);
-    }
+    protected $casts = [
+        'images' => 'array',
+    ];
 
     public function brand()
     {
         return $this->belongsTo(Brand::class);
     }
-
-
 }

@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-  <!-- ** Basic Page Needs ** -->
-  <meta charset="utf-8">
-  <title>Classimax | Classified Marketplace Template</title>
 
-  <!-- ** Mobile Specific Metas ** -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Agency HTML Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
-  <meta name="generator" content="Themefisher Classified Marketplace Template v1.0">
 
-  <!-- theme meta -->
-  <meta name="theme-name" content="classimax" />
+<!-- Fav Icon -->
+<link rel="icon" href="{{ asset('templates/assets/images/favicon.ico') }}" type="image/x-icon">
 
-  <!-- favicon -->
-  <link href="{{ asset('templates/images/favicon.png') }}" rel="shortcut icon">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!--
-  Essential stylesheets
-  =====================================-->
-  <link href="{{ asset('templates/plugins/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('templates/plugins/bootstrap/bootstrap-slider.css') }}" rel="stylesheet">
-  <link href="{{ asset('templates/plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('templates/plugins/slick/slick.css') }}" rel="stylesheet">
-  <link href="{{ asset('templates/plugins/slick/slick-theme.css') }}" rel="stylesheet">
-  <link href="{{ asset('templates/plugins/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet">
-
-  <link href="{{ asset('templates/css/style.css') }}" rel="stylesheet">
+<!-- Stylesheets -->
+<link href="{{ asset('templates/assets/css/font-awesome-all.css') }}" rel="stylesheet">
+<link href="{{ asset('templates/assets/css/flaticon.css') }}" rel="stylesheet">
+<link href="{{ asset('templates/assets/css/owl.css') }}" rel="stylesheet">
+<link href="{{ asset('templates/assets/css/bootstrap.css') }}" rel="stylesheet">
+<link href="{{ asset('templates/assets/css/jquery.fancybox.min.css') }}" rel="stylesheet">
+<link href="{{ asset('templates/assets/css/animate.css') }}" rel="stylesheet">
+<link href="{{ asset('templates/assets/css/color.css') }}" rel="stylesheet">
+<link href="{{ asset('templates/assets/css/style.css') }}" rel="stylesheet">
+<link href="{{ asset('templates/assets/css/responsive.css') }}" rel="stylesheet">
 
 </head>

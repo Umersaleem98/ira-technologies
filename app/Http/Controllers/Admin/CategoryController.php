@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Category;
+use App\Models\Brand;
 use Illuminate\Http\Request;
 
 
@@ -12,12 +12,12 @@ class CategoryController extends Controller
 
     public function index()
     {
-        $categories = Category::all();
+        $categories = Brand::all();
         return view('pages.admin.category.index', compact('categories'));
     }
     public function create()
     {
-        $categories = Category::all();
+        $categories = Brand::all();
         return view('pages.admin.category.create', compact('categories'));
     }
 
@@ -42,21 +42,21 @@ class CategoryController extends Controller
 
         $validated['is_active'] = $request->has('is_active') ? true : false;
 
-        Category::create($validated);
+        Brand::create($validated);
 
         return redirect()->route('categories.index')->with('success', 'Category created successfully!');
     }
 
     public function edit($id)
     {
-        $category = Category::find($id);
+        $category = Brand::find($id);
 
         return view('pages.admin.category.edit', compact('category'));
     }
     public function update(Request $request, $id)
     {
         // Fetch the category by ID
-        $category = Category::findOrFail($id);
+        $category = Brand::findOrFail($id);
 
         // Validate input
         $request->validate([
@@ -95,7 +95,7 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         // Fetch the category
-        $category = Category::findOrFail($id);
+        $category = Brand::findOrFail($id);
 
         // Delete image file if it exists
         if ($category->image && file_exists(public_path('templates/category/' . $category->image))) {

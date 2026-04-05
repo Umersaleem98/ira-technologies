@@ -1,26 +1,23 @@
 <?php
 
-use App\Http\Controllers\About\AboutController;
+
+
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
-use App\Http\Controllers\Admin\ProductsController;
 use App\Http\Controllers\auth\AuthController;
-use App\Http\Controllers\Contact\ContactController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\Products\OurProductsController;
+use App\Http\Controllers\Home\About\Home_AboutController;
+use App\Http\Controllers\Home\Contact\Home_ContactController;
+use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\Home\Product\Home_ProductController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/our-products', [OurProductsController::class, 'index'])->name('our.products');
+Route::get('/', [HomeController::class,'index'])->name('home');
+Route::get('/products', [Home_ProductController::class,'index'])->name('products');
+Route::get('/products/detail/{id}', [Home_ProductController::class, 'details'])->name('product.details');
 
-// Add this for search
-Route::get('/products/search', [OurProductsController::class, 'search'])->name('products.search');
-
-// Optional: show products by category
-Route::get('/products/category/{id}', [ProductsController::class, 'category'])->name('products.category');
-Route::get('/about', [AboutController::class, 'index'])->name('about');
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::get('/about', [Home_AboutController::class,'index'])->name('about');
+Route::get('/contact', [Home_ContactController::class,'index'])->name('contact');
 
 
 
@@ -36,7 +33,7 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Products
 
-Route::get('products', [ProductController::class, 'index'])->name('products.index');
+Route::get('product', [ProductController::class, 'index'])->name('products.index');
 Route::get('products/create', [ProductController::class, 'create'])->name('products.create');
 Route::post('products/store', [ProductController::class, 'store'])->name('products.store');
 Route::get('products/edit/{id}', [ProductController::class, 'edit'])->name('products.edit');

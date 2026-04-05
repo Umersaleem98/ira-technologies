@@ -1,104 +1,102 @@
- <footer class="footer section section-sm">
-        <!-- Container Start -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0 mb-4 mb-lg-0">
-                    <!-- About -->
-                    <div class="block about">
-                        <!-- footer logo -->
-                        <img src="templates/images/logo-footer.png" alt="logo" width="120">
-                        <!-- description -->
-                        <p class="alt-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-                <!-- Link list -->
-                <div class="col-lg-2 offset-lg-1 col-md-3 col-6 mb-4 mb-lg-0">
-                    <div class="block">
-                        <h4>Site Pages</h4>
-                        <ul>
-                            <li><a href="dashboard-my-ads.html">My Ads</a></li>
-                            <li><a href="dashboard-favourite-ads.html">Favourite Ads</a></li>
-                            <li><a href="dashboard-archived-ads.html">Archived Ads</a></li>
-                            <li><a href="dashboard-pending-ads.html">Pending Ads</a></li>
-                            <li><a href="terms-condition.html">Terms & Conditions</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Link list -->
-                <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0 col-6 mb-4 mb-md-0">
-                    <div class="block">
-                        <h4>Admin Pages</h4>
-                        <ul>
-                            <li><a href="category.html">Category</a></li>
-                            <li><a href="single.html">Single Page</a></li>
-                            <li><a href="store.html">Store Single</a></li>
-                            <li><a href="single-blog.html">Single Post</a>
-                            </li>
-                            <li><a href="blog.html">Blog</a></li>
-
-
-
-                        </ul>
-                    </div>
-                </div>
-                <!-- Promotion -->
-                <div class="col-lg-4 col-md-7">
-                    <!-- App promotion -->
-                    <div class="block-2 app-promotion">
-                        <div class="mobile d-flex  align-items-center">
-                            <a href="index.html">
-                                <!-- Icon -->
-                                <img src="templates/images/footer/phone-icon.png" alt="mobile-icon">
-                            </a>
-                            <p class="mb-0">Get the Dealsy Mobile App and Save more</p>
+  <!-- main-footer -->
+        <footer class="main-footer">
+            <div class="footer-top">
+                <div class="auto-container">
+                    <div class="row clearfix">
+                        <div class="col-lg-6 col-md-12 col-sm-12 big-column">
+                            <div class="row clearfix">
+                                <div class="col-lg-4 col-md-4 col-sm-12 footer-column">
+                                    <div class="footer-widget logo-widget">
+                                        <figure class="footer-logo"><a href="index.html"><img src="templates/assets/images/logo.png" width="100" alt=""></a></figure>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 footer-column">
+                                    <div class="footer-widget links-widget">
+                                        <div class="widget-title">
+                                            <h3>Category</h3>
+                                        </div>
+                                        <div class="widget-content">
+                                            <ul class="links-list clearfix">
+                                                <li><a href="index.html">Men</a></li>
+                                                <li><a href="index.html">Women</a></li>
+                                                <li><a href="index.html">Kids</a></li>
+                                                <li><a href="index.html">Accessories</a></li>
+                                                <li><a href="index.html">Shoe</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 footer-column">
+                                    <div class="footer-widget links-widget">
+                                        <div class="widget-title">
+                                            <h3>Useful Link</h3>
+                                        </div>
+                                        <div class="widget-content">
+                                            <ul class="links-list clearfix">
+                                                <li><a href="index.html">News & Tips</a></li>
+                                                <li><a href="index.html">About Us</a></li>
+                                                <li><a href="index.html">Terms & Conditions</a></li>
+                                                <li><a href="index.html">Our Shop</a></li>
+                                                <li><a href="index.html">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="download-btn d-flex my-3">
-                            <a href="index.html"><img src="templates/images/apps/google-play-store.png" class="img-fluid"
-                                    alt=""></a>
-                            <a href="index.html" class=" ml-3"><img src="templates/images/apps/apple-app-store.png"
-                                    class="img-fluid" alt=""></a>
+                        <div class="col-lg-6 col-md-12 col-sm-12 big-column">
+                            <div class="row clearfix">
+                                <div class="col-lg-6 col-md-6 col-sm-12 footer-column">
+                                    <div class="footer-widget contact-widget">
+                                        <div class="widget-title">
+                                            <h3>Contact</h3>
+                                        </div>
+                                        <ul class="info-list clearfix">
+                                            <li>4708 Ruecker Wall, <br />Kassandratown, HI</li>
+                                            <li><a href="tel:23055873407">+2(305) 587-3407</a></li>
+                                            <li><a href="mailto:info@example.com">info@example.com</a></li>
+                                        </ul>
+                                        <ul class="footer-social clearfix">
+                                            <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="index.html"><i class="fab fa-vimeo-v"></i></a></li>
+                                            <li><a href="index.html"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 footer-column">
+                                    <div class="footer-widget newsletter-widget">
+                                        <div class="widget-title">
+                                            <h3>Newsletter</h3>
+                                        </div>
+                                        <div class="widget-content">
+                                            <p>4708 Ruecker Wall, Kassandratown, HI 97729</p>
+                                            <form action="https://azim.commonsupport.com/Castro/contact.html" method="post" class="newsletter-form">
+                                                <div class="form-group">
+                                                    <input type="email" name="email" placeholder="Enter your email" required="">
+                                                    <button type="submit" class="theme-btn-two">Subscribe</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Container End -->
-    </footer>
-    <!-- Footer Bottom -->
-    <footer class="footer-bottom">
-        <!-- Container Start -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-center text-lg-left mb-3 mb-lg-0">
-                    <!-- Copyright -->
-                    <div class="copyright">
-                        <p>Copyright &copy;
-                            <script>
-                                var CurrentYear = new Date().getFullYear()
-                                document.write(CurrentYear)
-                            </script>. Designed & Developed by <a class="text-white"
-                                href="https://themefisher.com">Themefisher</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <!-- Social Icons -->
-                    <ul class="social-media-icons text-center text-lg-right">
-                        <li><a class="fa fa-facebook" href="https://www.facebook.com/themefisher"></a></li>
-                        <li><a class="fa fa-twitter" href="https://www.twitter.com/themefisher"></a></li>
-                        <li><a class="fa fa-pinterest-p" href="https://www.pinterest.com/themefisher"></a></li>
-                        <li><a class="fa fa-github-alt" href="https://www.github.com/themefisher"></a></li>
+            <div class="footer-bottom">
+                <div class="auto-container clearfix">
+                    <ul class="cart-list pull-left clearfix">
+                        <li><a href="index.html"><img src="templates/assets/images/resource/card-1.png" alt=""></a></li>
+                        <li><a href="index.html"><img src="templates/assets/images/resource/card-2.png" alt=""></a></li>
+                        <li><a href="index.html"><img src="templates/assets/images/resource/card-3.png" alt=""></a></li>
+                        <li><a href="index.html"><img src="templates/assets/images/resource/card-4.png" alt=""></a></li>
                     </ul>
+                    <div class="copyright pull-right">
+                        <p><a href="index.html">Castro</a> &copy; 2020 All Right Reserved</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Container End -->
-        <!-- To Top -->
-        <div class="scroll-top-to">
-            <i class="fa fa-angle-up"></i>
-        </div>
-    </footer>
+        </footer>
+        <!-- main-footer end -->
