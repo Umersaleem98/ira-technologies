@@ -11,8 +11,8 @@
 						<div class="info">
 							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
 								<span>
-									Hizrian
-									<span class="user-level">Administrator</span>
+									{{ Auth::user()->name }}
+									<span class="user-level">{{ Auth::user()->role }}</span>
 									<span class="caret"></span>
 								</span>
 							</a>

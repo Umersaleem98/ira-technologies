@@ -87,6 +87,9 @@
                                             <a href="{{ route('products.edit', $product->id) }}"
                                                 class="btn btn-sm btn-primary">Edit</a>
 
+                                            
+                                        </td>
+                                        <td>
                                             <form action="{{ route('products.destroy', $product->id) }}" method="POST"
                                                 class="d-inline" onsubmit="return confirm('Are you sure?');">
                                                 @csrf

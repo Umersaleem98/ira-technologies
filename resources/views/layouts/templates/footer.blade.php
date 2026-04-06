@@ -94,9 +94,4 @@
                         <li><a href="#"><img src="templates/assets/images/resource/card-4.png" alt=""></a></li>
                     </ul>
                     <div class="copyright pull-right">
-                        <p><a href="#">Castro</a> &copy; 2020 All Right Reserved</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- main-footer end -->
+                        <p><a href="#">Ira Tech

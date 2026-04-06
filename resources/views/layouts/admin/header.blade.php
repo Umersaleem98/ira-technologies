@@ -4,7 +4,7 @@
     <div class="logo-header">
 
         <a href="#" class="logo">
-            <img src="{{ asset('admins/assets/img/logoazzara.svg') }}" alt="navbar brand" class="navbar-brand">
+            <img src="{{ asset('templates/assets/images/footer-logo-2.png') }}" alt="navbar brand" class="navbar-brand" width="100">
         </a>
 
         <button class="navbar-toggler sidenav-toggler ml-auto" type="button">
