@@ -21,31 +21,34 @@ class CategoryController extends Controller
         return view('pages.admin.category.create', compact('categories'));
     }
 
-    public function store(Request $request)
-    {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'is_active' => 'nullable|boolean',
-        ]);
+  public function store(Request $request)
+{
+    $validated = $request->validate([
+        'name' => 'required|string|max:255',
+        'logo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+        'url' => 'nullable|string|max:255',
+        'description' => 'nullable|string',
+        'tag' => 'nullable|string',
+    ]);
 
-        if ($request->hasFile('image')) {
-            $image = $request->file('image');
-            $imageName = time() . '.' . $image->getClientOriginalExtension();
+    // Handle Logo Upload
+    if ($request->hasFile('logo')) {
+        $logo = $request->file('logo');
+        $logoName = time() . '.' . $logo->getClientOriginalExtension();
 
-            // Save file directly to public/templates/category
-            $image->move(public_path('templates/category'), $imageName);
+        // Save file to public/templates/category
+        $logo->move(public_path('templates/category'), $logoName);
 
-            // Store only filename in DB
-            $validated['image'] = $imageName;
-        }
-
-        $validated['is_active'] = $request->has('is_active') ? true : false;
-
-        Brand::create($validated);
-
-        return redirect()->route('categories.index')->with('success', 'Category created successfully!');
+        // Store filename in DB
+        $validated['logo'] = $logoName;
     }
+
+    // Create Category (IMPORTANT: use correct model)
+    Brand::create($validated);
+
+    return redirect()->route('categories.index')
+        ->with('success', 'Category created successfully!');
+}
 
     public function edit($id)
     {
@@ -53,44 +56,41 @@ class CategoryController extends Controller
 
         return view('pages.admin.category.edit', compact('category'));
     }
-    public function update(Request $request, $id)
-    {
-        // Fetch the category by ID
-        $category = Brand::findOrFail($id);
+  public function update(Request $request, $id)
+{
+    // Fetch category (FIX: use correct model)
+    $category = Brand::findOrFail($id);
 
-        // Validate input
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'is_active' => 'nullable|boolean',
-        ]);
+    // Validation
+    $validated = $request->validate([
+        'name' => 'required|string|max:255',
+        'logo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+        'url' => 'nullable|string|max:255',
+        'description' => 'nullable|string',
+        'tag' => 'nullable|string',
+    ]);
 
-        // Update name
-        $category->name = $request->name;
+    // Handle logo upload
+    if ($request->hasFile('logo')) {
 
-        // Update status
-        $category->is_active = $request->has('is_active') ? true : false;
-
-        // Handle image upload
-        if ($request->hasFile('image')) {
-            // Delete old image if exists
-            if ($category->image && file_exists(public_path('templates/category/' . $category->image))) {
-                unlink(public_path('templates/category/' . $category->image));
-            }
-
-            $image = $request->file('image');
-            $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path('templates/category'), $imageName);
-
-            // Save new image filename
-            $category->image = $imageName;
+        // Delete old logo
+        if ($category->logo && file_exists(public_path('templates/category/' . $category->logo))) {
+            unlink(public_path('templates/category/' . $category->logo));
         }
 
-        // Save all changes
-        $category->save();
+        $logo = $request->file('logo');
+        $logoName = time() . '.' . $logo->getClientOriginalExtension();
+        $logo->move(public_path('templates/category'), $logoName);
 
-        return redirect()->route('categories.index')->with('success', 'Category updated successfully!');
+        $validated['logo'] = $logoName;
     }
+
+    // Update data
+    $category->update($validated);
+
+    return redirect()->route('categories.index')
+        ->with('success', 'Category updated successfully!');
+}
 
     public function destroy($id)
     {

@@ -7,7 +7,7 @@
                             <div class="row clearfix">
                                 <div class="col-lg-4 col-md-4 col-sm-12 footer-column">
                                     <div class="footer-widget logo-widget">
-                                        <figure class="footer-logo"><a href="index.html"><img src="templates/assets/images/logo.png" width="100" alt=""></a></figure>
+                                        <figure class="footer-logo"><a href="#"><img src="templates/assets/images/logo.png" width="100" alt=""></a></figure>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12 footer-column">
@@ -17,11 +17,11 @@
                                         </div>
                                         <div class="widget-content">
                                             <ul class="links-list clearfix">
-                                                <li><a href="index.html">Men</a></li>
-                                                <li><a href="index.html">Women</a></li>
-                                                <li><a href="index.html">Kids</a></li>
-                                                <li><a href="index.html">Accessories</a></li>
-                                                <li><a href="index.html">Shoe</a></li>
+                                                <li><a href="#">Men</a></li>
+                                                <li><a href="#">Women</a></li>
+                                                <li><a href="#">Kids</a></li>
+                                                <li><a href="#">Accessories</a></li>
+                                                <li><a href="#">Shoe</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -33,11 +33,11 @@
                                         </div>
                                         <div class="widget-content">
                                             <ul class="links-list clearfix">
-                                                <li><a href="index.html">News & Tips</a></li>
-                                                <li><a href="index.html">About Us</a></li>
-                                                <li><a href="index.html">Terms & Conditions</a></li>
-                                                <li><a href="index.html">Our Shop</a></li>
-                                                <li><a href="index.html">Contact Us</a></li>
+                                                <li><a href="#">News & Tips</a></li>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Terms & Conditions</a></li>
+                                                <li><a href="#">Our Shop</a></li>
+                                                <li><a href="#">Contact Us</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -52,15 +52,15 @@
                                             <h3>Contact</h3>
                                         </div>
                                         <ul class="info-list clearfix">
-                                            <li>4708 Ruecker Wall, <br />Kassandratown, HI</li>
+                                            <li>The Embankment,<br />Bedford MK40 1RW, UK</li>
                                             <li><a href="tel:23055873407">+2(305) 587-3407</a></li>
-                                            <li><a href="mailto:info@example.com">info@example.com</a></li>
+                                            <li><a href="mailto:info@example.com">info@ira-technologies.co.uk</a></li>
                                         </ul>
                                         <ul class="footer-social clearfix">
-                                            <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="index.html"><i class="fab fa-vimeo-v"></i></a></li>
-                                            <li><a href="index.html"><i class="fab fa-google-plus-g"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -88,13 +88,13 @@
             <div class="footer-bottom">
                 <div class="auto-container clearfix">
                     <ul class="cart-list pull-left clearfix">
-                        <li><a href="index.html"><img src="templates/assets/images/resource/card-1.png" alt=""></a></li>
-                        <li><a href="index.html"><img src="templates/assets/images/resource/card-2.png" alt=""></a></li>
-                        <li><a href="index.html"><img src="templates/assets/images/resource/card-3.png" alt=""></a></li>
-                        <li><a href="index.html"><img src="templates/assets/images/resource/card-4.png" alt=""></a></li>
+                        <li><a href="#"><img src="templates/assets/images/resource/card-1.png" alt=""></a></li>
+                        <li><a href="#"><img src="templates/assets/images/resource/card-2.png" alt=""></a></li>
+                        <li><a href="#"><img src="templates/assets/images/resource/card-3.png" alt=""></a></li>
+                        <li><a href="#"><img src="templates/assets/images/resource/card-4.png" alt=""></a></li>
                     </ul>
                     <div class="copyright pull-right">
-                        <p><a href="index.html">Castro</a> &copy; 2020 All Right Reserved</p>
+                        <p><a href="#">Castro</a> &copy; 2020 All Right Reserved</p>
                     </div>
                 </div>
             </div>

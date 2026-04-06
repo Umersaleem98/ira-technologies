@@ -33,7 +33,7 @@
         <div class="container-fluid">
 
             <!-- Search -->
-            <div class="collapse" id="search-nav">
+            {{-- <div class="collapse" id="search-nav">
                 <form class="navbar-left navbar-form nav-search mr-md-3">
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -44,7 +44,7 @@
                         <input type="text" placeholder="Search ..." class="form-control">
                     </div>
                 </form>
-            </div>
+            </div> --}}
 
             <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 

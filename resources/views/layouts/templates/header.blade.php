@@ -5,9 +5,9 @@
             <div class="top-inner clearfix">
                 <div class="top-left pull-left">
                     <ul class="info clearfix">
-                        <li><i class="flaticon-email"></i><a href="mailto:support@example.com">support@example.com</a>
+                        <li><i class="flaticon-email"></i><a href="mailto:support@example.com">info@ira-technologies.co.uk</a>
                         </li>
-                        <li><i class="flaticon-global"></i> Kleine Pierbard 8-6 2249 KV Vries</li>
+                        <li><i class="flaticon-global"></i> The Embankment, Bedford MK40 1RW, United</li>
                     </ul>
                 </div>
                 <div class="top-right pull-right">

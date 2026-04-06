@@ -19,54 +19,84 @@
 
                     </div>
 
-                    <div class="container mt-5">
-                        <h2>Edit Category</h2>
+                  <div class="container mt-5">
+    <h2>Edit Category</h2>
 
-                        <form action="{{ route('categories.update', $category->id) }}" method="POST"
-                            enctype="multipart/form-data">
-                            @csrf
-                            @method('PUT')
+    <form action="{{ route('categories.update', $category->id) }}" method="POST" enctype="multipart/form-data">
+        @csrf
+        @method('PUT')
 
-                            <!-- Category Name -->
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Category Name</label>
-                                <input type="text" name="name"
-                                    class="form-control @error('name') is-invalid @enderror" id="name"
-                                    value="{{ old('name', $category->name) }}" placeholder="Enter category name"
-                                    required>
-                                @error('name')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
-                            </div>
+        <!-- Name -->
+        <div class="mb-3">
+            <label class="form-label">Category Name</label>
+            <input type="text" name="name"
+                class="form-control @error('name') is-invalid @enderror"
+                value="{{ old('name', $category->name) }}"
+                placeholder="Enter category name" required>
+            @error('name')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
 
-                            <!-- Category Image -->
-                            <div class="mb-3">
-                                <label for="image" class="form-label">Category Image</label>
-                                <input type="file" name="image"
-                                    class="form-control @error('image') is-invalid @enderror" id="image"
-                                    accept="image/*">
-                                @error('image')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
+        <!-- Logo -->
+        <div class="mb-3">
+            <label class="form-label">Category Logo</label>
+            <input type="file" name="logo"
+                class="form-control @error('logo') is-invalid @enderror"
+                accept="image/*">
+            @error('logo')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
 
-                                @if ($category->image)
-                                    <div class="mt-2">
-                                        <img src="{{ asset('templates/category/' . $category->image) }}"
-                                            alt="{{ $category->name }}" width="100" class="img-thumbnail">
-                                    </div>
-                                @endif
-                            </div>
+            @if ($category->logo)
+                <div class="mt-2">
+                    <img src="{{ asset('templates/category/' . $category->logo) }}"
+                        alt="{{ $category->name }}"
+                        width="100"
+                        class="img-thumbnail">
+                </div>
+            @endif
+        </div>
 
-                            <!-- Is Active -->
-                            <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox" name="is_active" value="1"
-                                    id="is_active" {{ $category->is_active ? 'checked' : '' }}>
-                                <label class="form-check-label" for="is_active">Active</label>
-                            </div>
+        <!-- URL -->
+        <div class="mb-3">
+            <label class="form-label">Category URL</label>
+            <input type="text" name="url"
+                class="form-control @error('url') is-invalid @enderror"
+                value="{{ old('url', $category->url) }}"
+                placeholder="Enter category URL">
+            @error('url')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
 
-                            <button type="submit" class="btn btn-success">Update Category</button>
-                        </form>
-                    </div>
+        <!-- Description -->
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            <textarea name="description"
+                class="form-control @error('description') is-invalid @enderror"
+                rows="4"
+                placeholder="Enter description">{{ old('description', $category->description) }}</textarea>
+            @error('description')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <!-- Tags -->
+        <div class="mb-3">
+            <label class="form-label">Tags</label>
+            <input type="text" name="tag"
+                class="form-control @error('tag') is-invalid @enderror"
+                value="{{ old('tag', $category->tag) }}"
+                placeholder="Enter tags (comma separated)">
+            @error('tag')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <button type="submit" class="btn btn-success">Update Category</button>
+    </form>
+</div>
                 </div>
             </div>
 

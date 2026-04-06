@@ -24,61 +24,74 @@
                         <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
 
-                            <!-- Product Name -->
+                            <!-- Name -->
                             <div class="mb-3">
-                                <label for="name" class="form-label">Product Name</label>
-                                <input type="text" name="name"
-                                    class="form-control @error('name') is-invalid @enderror" id="name"
+                                <label class="form-label">Product Name</label>
+                                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror"
                                     value="{{ old('name') }}" placeholder="Enter product name" required>
                                 @error('name')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
 
-                            <!-- Product Description -->
+                            <!-- Brand -->
                             <div class="mb-3">
-                                <label for="description" class="form-label">Description</label>
-                                <textarea name="description" class="form-control @error('description') is-invalid @enderror" id="description"
-                                    rows="4" placeholder="Enter product description">{{ old('description') }}</textarea>
+                                <label class="form-label">Brand</label>
+                                <select name="brand_id" class="form-control @error('brand_id') is-invalid @enderror"
+                                    required>
+                                    <option value="">-- Select Brand --</option>
+                                    @foreach ($categories as $brand)
+                                        <option value="{{ $brand->id }}" {{ old('brand_id') == $brand->id ? 'selected' : '' }}>
+                                            {{ $brand->name }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                                @error('brand_id')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                            <!-- Description -->
+                            <div class="mb-3">
+                                <label class="form-label">Description</label>
+                                <textarea name="description"
+                                    class="form-control @error('description') is-invalid @enderror" rows="4"
+                                    placeholder="Enter product description">{{ old('description') }}</textarea>
                                 @error('description')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
 
-                            <!-- Product Image -->
+                            <!-- Tags -->
                             <div class="mb-3">
-                                <label for="image" class="form-label">Product Image</label>
-                                <input type="file" name="image"
-                                    class="form-control @error('image') is-invalid @enderror" id="image"
+                                <label class="form-label">Tags</label>
+                                <input type="text" name="tag" class="form-control @error('tag') is-invalid @enderror"
+                                    value="{{ old('tag') }}" placeholder="Enter tags (comma separated)">
+                                @error('tag')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                            <!-- Images (Multiple Upload) -->
+                            <div class="mb-3">
+                                <label class="form-label">Product Images</label>
+                                <input type="file" name="images[]"
+                                    class="form-control @error('images') is-invalid @enderror" multiple
                                     accept="image/*">
-                                @error('image')
+                                @error('images')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
 
-                            <!-- Category Selection -->
-                            <div class="mb-3 col-md-6">
-                                <label for="category_id" class="form-label">Category</label>
-                                <select name="category_id" id="category_id"
-                                    class="form-control @error('category_id') is-invalid @enderror" required>
-                                    <option value="">-- Select Category --</option>
-                                    @foreach ($categories as $category)
-                                        <option value="{{ $category->id }}"
-                                            {{ old('category_id') == $category->id ? 'selected' : '' }}>
-                                            {{ $category->name }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                                @error('category_id')
+                            <!-- Rating -->
+                            <div class="mb-3">
+                                <label class="form-label">Rating (0 - 5)</label>
+                                <input type="number" name="rating"
+                                    class="form-control @error('rating') is-invalid @enderror"
+                                    value="{{ old('rating') }}" min="0" max="5" step="0.1" placeholder="Enter rating">
+                                @error('rating')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
-                            </div>
-
-                            <!-- Is Active -->
-                            <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox" name="is_active" value="1"
-                                    id="is_active" checked>
-                                <label class="form-check-label" for="is_active">Active</label>
                             </div>
 
                             <button type="submit" class="btn btn-primary">Create Product</button>

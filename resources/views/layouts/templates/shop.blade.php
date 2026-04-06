@@ -12,9 +12,10 @@
 
                 @foreach($products as $product)
                     @php
-                        $images = is_array($product->images) 
-                            ? $product->images 
-                            : json_decode($product->images ?? '[]', true);
+                        // Fetch the first image from the directory, fallback to default
+                        $imagePath = !empty($product->images) && file_exists(public_path('templates/products/' . $product->images))
+                            ? asset('templates/products/'. $product->images)
+                            : asset('templates/products/default.jpg');
                     @endphp
 
                     <div class="col-lg-3 col-md-6 col-sm-12 shop-block masonry-item small-column">
@@ -23,10 +24,7 @@
 
                                 <!-- Image -->
                                 <figure class="image-box">
-                                    <img src="{{ !empty($images[0]) 
-                                        ? asset('templates/assets/images/products/'.$images[0]) 
-                                        : asset('templates/assets/images/products/default.jpg') 
-                                    }}" alt="{{ $product->name }}">
+                                    <img src="{{ $imagePath }}" alt="{{ $product->name }}">
 
                                     <!-- Actions -->
                                     <ul class="info-list clearfix">
@@ -41,11 +39,7 @@
                                         </li>
 
                                         <li>
-                                            <a href="{{ !empty($images[0]) 
-                                                ? asset('templates/assets/images/products/'.$images[0]) 
-                                                : '#' 
-                                            }}" 
-                                            class="lightbox-image" data-fancybox="gallery">
+                                            <a href="{{ $imagePath }}" class="lightbox-image" data-fancybox="gallery">
                                                 <i class="flaticon-search"></i>
                                             </a>
                                         </li>
